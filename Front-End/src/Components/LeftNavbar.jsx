@@ -2,7 +2,7 @@ import React from 'react'
 import './App.css'
 import {IconButton } from "@mui/material"
 import axios from 'axios'
-
+//LeftNavbar
 function LeftNavbar({addView2Visibility, setaddView2Visibility, addView1Visibility, setaddView1Visibility, counter, setCounter, addCustomerVisibility, setaddCustomerVisibility, addVehicleVisibility, setaddVehicleVisibility, addRentalVisibility, setaddRentalVisibility, loading, setloading, addReturnVehicleVisibility, setaddReturnVehicleVisibility, counter2, setcounter2, viewVisibility, setviewVisibility, tablesCreated, settablesCreated}) {
   return (
     <div style={{width: "150px", height: "100%", borderRight: "solid 1px #E9ECEF", display :"flex", flexDirection: "column", alignItems: "center"}}>

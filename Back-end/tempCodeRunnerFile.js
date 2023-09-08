@@ -1,0 +1,1 @@
+    let sql = `SELECT Vehicle.VehicleID as VIN, Vehicle.Description as Description,  CASE WHEN Vehicle.VehicleID IN (SELECT VIN FROM vRENTALInfo) THEN Daily ELSE 'Not Applicable' END as AvgDaily FROM Vehicle, Rate WHERE Vehicle.Type = Rate.Type AND Vehicle.Category = Rate.Category GROUP BY Vehicle.VehicleID ORDER BY Vehicle.VehicleID ASC`;

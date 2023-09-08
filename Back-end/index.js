@@ -10,6 +10,7 @@ const initial_Vehicle_data = initial_data.initial_vehicle_data;
 const initial_Rental_data = initial_data.initial_rental_data;
 app.use(express.static('public'));
 
+//connnecting with mySQL
 var con = mysql.createConnection({
     host: "sql9.freesqldatabase.com",
     port: "3306",
@@ -17,6 +18,7 @@ var con = mysql.createConnection({
     password: "v31MbmJ7pe",
     database: "sql9582591"
 });
+
 
 con.connect(function(err) {
     if (err) console.log(err);
